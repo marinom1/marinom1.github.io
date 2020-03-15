@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>marinom1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" /> <!-- this connects my styles.css file to this html file -->
+
+</head>
+<body>
+
+<div class="header">
+  <h1>marinom1's Website</h1>
+  <p>A <b>responsive</b> website created by marinom1</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html" >Home</a>
+  <a href="scheduler.html" class="active">Scheduler</a>
+  <a href="snake.html">SnakeGame</a>
+  <a href="snakeMobile.html">SnakeGameMobile</a>
+  
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+
+<div class="main">
+<h2>A scheduler by marinom1</h2>
+
+<div class="schedule">
+
+	<div class="eventName">
+
+	<p>Event Name</p>
+  <input type="text" id="test1" value="Enter Event Name">
+  
+  </div> <!-- close eventName class div -->
+
+  <div class="eventTime" >
+  <p>Event Time</p>
+  <div class ="minsec" style="float:left;">
+  <input type="text" id="test2" value="Mins"size="3">
+  </div>
+
+  <div style="float:left;">
+  <input type="text" id="test3" value="Secs"size="3">
+  <button type="button" onclick="addNewEvent()">Add another event</button>
+  </div>
+
+  </div> <!-- close eventTime class div -->
+</div> <!-- close schedule div-->
+<button type="button">Send Events</button> 
+
+<script src="myScript.js"></script>
+</div> <!-- close main div-->
+
+</body>
+</html>
